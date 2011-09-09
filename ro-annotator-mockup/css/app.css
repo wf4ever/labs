@@ -1,5 +1,18 @@
+html, body {
+  background-color: #E9EEF6;
+}
+
 body {
   padding-top: 55px;
+}
+
+.clear {
+  display: block;
+  clear: both;
+  height: 1px;
+  line-height: 0;
+  font-size: 0px;
+  margin-bottom: -1px;
 }
 
 #left-column {
@@ -51,27 +64,49 @@ body {
 }
 
 .treeview li { 
-  padding-bottom: 0.6em;
-}
-
-.treeview span { 
+  padding-bottom: 0.4em;
 }
 
 .treeview li * {
   vertical-align: top;
 }
 
-.filetree span.folder,
-.filetree span.file {
+.filetree span.folder {
   padding-left: 18px;
+}
+
+.filetree span.file {
+  padding-left: 20px;
+  border: 1px dotted transparent;
+  background-position-x: 2px;
+  background-position-y: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.filetree li:hover > span.file {
+  cursor: pointer;
+  background-color: #CCC;
+  border: 1px dotted #BBB;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.filetree li.selected > span.file {
+  background-color: #DDD;
+  border: 1px dotted #BBB;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 
 #annotating-box {
   border: 2px solid #CCC;
   background-color: #FFF;
-  border-radius: 6px;
   margin-left: -80px;
-  min-height: 600px;
+  min-height: 500px;
+  border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   box-shadow: 0 0 4px #CCC;
@@ -86,7 +121,7 @@ body {
   background-color: #6182AF;
   font-size: 14px;
   font-weight: bold;
-  text-align: right;
+  text-align: left;
   border-bottom: 1px solid #BBB;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -97,9 +132,27 @@ body {
 }
 
 #annotating-box .content {
-  padding: 1.3em 1em;
-  padding-left: 90px;
+  margin: 1.3em 1em;
+  margin-left: 80px;
   margin-bottom: 10px;
+  height: 500px;
+}
+
+.annotations-list {
+  float: left;
+  width: 37%;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 2px solid #DDD;
+  height: 500px;
+  overflow: auto;
+}
+
+.annotations-editor {
+  float: right;
+  width: 58%;
+  height: 500px;
+  overflow: auto;
 }
 
 
