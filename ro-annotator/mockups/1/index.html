@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Wf4Ever - RO Annotator</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css" />
+	<link rel="stylesheet" href="../_core/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="css/app.css" />
+
+	<script src="../_core/js/libs/modernizr-2.0.min.js"></script>
+	<script src="../_core/js/libs/respond.min.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="container">
+        <h3><a href="#">Wf4Ever - RO Annotator MOCKUP</a></h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <!-- RO viewer -->
+      <div id="left-column" class="span6 column">
+        <section id="ro-viewer">
+          <div class="header">
+            Research Object: Epigenius_experiment1
+          </div>
+          
+          <div class="content">
+            <ul id="ro-tree" class="treeview filetree">
+              <li class="open">
+                <span href="#" class="folder">Datasets</span>
+                <ul>
+                  <li class="selected"><span href="#" class="file">HD_dataset1 (GEO series datafile)</span></li>
+                  <li><span href="#" class="file">HD_dataset2 (GEO series datafile)</span></li>
+                </ul>
+              </li>
+              <li>
+                <span href="#" class="folder">Scripts</span>
+                <ul>
+                  <li><span href="#" class="file">Analyse_data (R script)</span></li>
+                  <li><span href="#" class="file">GOorKEGG_enrichment (R script)</span></li>
+                </ul>
+              </li>
+              <li>
+                <span href="#" class="folder">Web Services</span>
+                <ul>
+                  <li><span href="#" class="file">CpG_island_enrichment (SOAP Service)</span></li>
+                </ul>
+              </li>
+              <li>
+                <span href="#" class="folder">Workflows</span>
+                <ul>
+                  <li><span href="#" class="file">SigWin_detector_v2 (Taverna 2 workflow)</span></li>
+                </ul>
+              </li>
+              <li>
+                <span href="#" class="folder">Docs</span>
+                <ul>
+                  <li><span href="#" class="file">Hodges2006 (PDF)</span></li>
+                  <li><span href="#" class="file">HDACi4b (PDF)</span></li>
+                  <li><span href="#" class="file">SigWin-detector (PDF)</span></li>
+                  <li><span href="#" class="file">Global test (PDF)</span></li>
+                  <li><span href="#" class="file">Paper_1 (PDF)</span></li>
+                  <li><span href="#" class="file">Paper_2 (PDF)</span></li>
+                  <li><span href="#" class="file">Paper_3 (PDF)</span></li>
+                  <li><span href="#" class="file">Paper_4 (PDF)</span></li>
+                  <li><span href="#" class="file">Paper_5 (PDF)</span></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      
+      <!-- Annotating box -->
+      <div id="right-column" class="span10 column">
+        <section id="annotating-box">
+          <div class="header">
+            Annotating "HD_dataset1 (GEO series datafile)"
+          </div>
+          
+          <div class="content">
+            <div class="annotations-list">
+              <ul>
+                <li>
+                  <span>Description</span>
+                  <span>Blah blah blah...</span>
+                </li>
+                <li>
+                  <span>Created At</span>
+                  <span>2011-09-06 11:00...</span>
+                </li>
+              </ul>
+            </div>
+            <div class="annotations-editor">
+              &nbsp;
+            </div>
+            <span class="clear">&nbsp;</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+	
+<script src="../_core/js/libs/jquery.js"></script>
+<script src="../_core/js/libs/jquery.treeview.js"></script>
+<script src="../_core/js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+</body>
+</html>
