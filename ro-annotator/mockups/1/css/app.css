@@ -85,18 +85,20 @@ body {
   padding-bottom: 3px;
 }
 
-.filetree li:hover > span.file {
+.filetree li:hover > span.file,
+.annotations-list ul li:hover {
   cursor: pointer;
   background-color: #CCC;
-  border: 1px dotted #BBB;
+  border: 1px solid #BBB;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 
-.filetree li.selected > span.file {
-  background-color: #DDD;
-  border: 1px dotted #BBB;
+.filetree li.selected > span.file,
+.annotations-list ul li.selected {
+  background-color: #EEE;
+  border: 1px solid #CCC;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -117,7 +119,7 @@ body {
 
 #annotating-box .header {
   padding: 8px 12px;
-  padding-left: 88px;
+  padding-left: 65px;
   color: #F5F5F5;
   background-color: #6182AF;
   font-size: 14px;
@@ -134,7 +136,7 @@ body {
 
 #annotating-box .content {
   margin: 1.6em 1em;
-  margin-left: 80px;
+  margin-left: 65px;
   margin-bottom: 10px;
   height: 500px;
 }
@@ -144,9 +146,41 @@ body {
   width: 37%;
   padding-right: 10px;
   margin-right: 10px;
-  border-right: 1px dashed #CCC;
+  border-right: 1px dashed #BBB;
   height: 500px;
   overflow: auto;
+}
+
+.annotations-list ul {
+  list-style: none;
+  margin: 0;
+}
+
+.annotations-list ul li {
+  display: block;
+  padding: 0.2em 0.5em;
+  border: 1px solid #DDD;
+  margin: 0;
+}
+
+.annotations-list ul li * {
+  vertical-align: middle;
+}
+
+.annotations-list ul li .attribute {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #E1D8FF;
+  color: #635F70;
+  border: 1px solid #CCC;
+  padding: 1px 3px;
+  text-decoration: none;
+  line-height: 1.0;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin-right: 0.5em;
 }
 
 .annotations-editor {
