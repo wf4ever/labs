@@ -193,4 +193,11 @@ body {
   overflow: auto;
 }
 
+.form-stacked {
+  padding-left: 0;
+}
+
+.form-stacked label {
+  margin-bottom: 0.4em;
+}
 
