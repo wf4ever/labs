@@ -99,6 +99,10 @@
                   <span class="attribute">Type</span>
                   <span>GEO series datafile</span>
                 </li>
+                <li>
+                  <span class="attribute">Keywords</span>
+                  <span>human, brain, datas...</span>
+                </li>
                 <li class="selected">
                   <span class="attribute">Description</span>
                   <span>Human brain data...</span>
@@ -114,7 +118,36 @@
               </ul>
             </div>
             <div class="annotations-editor">
-              &nbsp;
+              <form class="form-stacked">
+                <fieldset>
+                  <div class="clearfix">
+                    <label for="annAttribute">What kind of annotation is this?</label>
+                    <div class="input">
+                      <select name="annAttribute" id="annAttribute">
+                        <option>Type</option>
+                        <option>Keywords</option>
+                        <option selected="selected">Description</option>
+                        <option>Data Format</option>
+                        <option>Note</option>
+                        <option>Created At</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <label for="annValue">Value for the annotation</label>
+                    <div class="input">
+                      <textarea class="large" id="annValue" name="annValue" style="width: 95%; height: 20em;">
+Human brain dataset. 44 HD samples, 36 Controls age and sex matched. Brain areas:caudate nucleus, frontal cortex and cerebellum. Affymetrix platform.
+Rows correspond to probe ids and columns to samples.
+                      </textarea>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="actions">
+                  <button type="submit" class="btn primary">Save Changes</button>
+                  <button type="reset" class="btn">Cancel</button>
+                </div>
+              </form>
             </div>
             <span class="clear">&nbsp;</span>
           </div>
